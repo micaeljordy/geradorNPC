@@ -1,0 +1,39 @@
+/* To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package classes;
+
+/**
+ *Classe filha de "Classe"
+ *
+ * @author micaeljordy
+ */
+
+public final class Clerigo extends Classe{
+    private final Integer dVida = new Integer(8);
+    
+    @Override
+    public void gravar(Integer nivel) {
+        frase = "clérigo criado!";
+        vida = rolagemVida(dVida, nivel);
+        //atributos
+        forca = 0;
+        destreza = 0;
+        constituicao = 0;
+        inteligencia = 0;
+        sabedoria = ganhoAtributo(nivel);
+        carisma = 0;
+
+    }
+    /**
+     * Construtor da classe.
+     * 
+     * @param nivel
+     */
+    public Clerigo(int nivel) {
+        gravar(nivel);
+        
+        //System.out.printf("Clerigo: V %d S %d\n", vida, sabedoria);
+    }
+}
