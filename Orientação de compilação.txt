@@ -1,0 +1,11 @@
+1 - Importe este projeto no eclipse
+
+2 - Exporte como Runnable JAR file
+
+3 - Dê um nome ao arquivo compilado e coloque terminação .jar
+
+4 - Abra o prompt de comando ou terminal
+
+5 - Abra a pasta que possui o arquivo compilado
+
+6 - Digite java -jar arquivo.jar
